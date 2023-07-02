@@ -1,0 +1,54 @@
+.aes-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    /* Estilos para la lista desplegable */
+    .aes-dropdown {
+      width: 150px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    /* Estilos para los resultados */
+    .result {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Implementación de AES</h1>
+  
+  <label for="key">Clave:</label>
+  <input type="text" id="key">
+  
+  <label for="text">Texto:</label>
+  <input type="text" id="text">
+  
+  <button class="aes-button">Cifrar</button>
+  <button class="aes-button">Descifrar</button>
+  
+  <label for="aes-type">Tipo de AES:</label>
+  <select id="aes-type" class="aes-dropdown">
+    <option value="128">AES-128</option>
+    <option value="192">AES-192</option>
+    <option value="256">AES-256</option>
+  </select>
+  
+  <div class="result">
+    Resultado: <span id="result-text"></span>
+  </div>
+</body>
+</html>
